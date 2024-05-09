@@ -12,4 +12,4 @@ Este projeto é um desafio de desenvolvimento para criar um diagrama de UML para
 
 ## Imagem do Diagrama UML
 
-![Imagem do Projeto](./Diagramacao-de-Classes-do-iPhone/Diagrama.jpg)
+![Imagem do Projeto](./Diagramas/Diagrama.jpg)
