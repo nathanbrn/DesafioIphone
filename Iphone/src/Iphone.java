@@ -1,20 +1,24 @@
+import java.util.Arrays;
+
 class ReprodutorMusical {
     String[] musicas = new String[5];
 
     void tocar(String musica) {
-        selecionarMusica(musica);
-        System.out.println("Tocando música: " + musica);
+        if (selecionarMusica(musica))
+            System.out.println("Tocando música: " + musica);
     }
 
     void pausar() {
         System.out.println("Música pausada");
     }
 
-    void selecionarMusica(String musica) {
-        if (musica.equals(musicas)) {
+    boolean selecionarMusica(String musica) {
+        if (Arrays.asList(musicas).contains(musica)) {
             System.out.println("Música selecionada: " + musica);
+            return true;
         } else {
             System.out.println("Música não encontrada");
+            return false;
         }
     }
 }
